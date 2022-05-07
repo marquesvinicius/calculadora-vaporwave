@@ -42,6 +42,7 @@ textarea {
     align-self: center;
     margin-top: 1rem;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .operacao_e_teclado {
@@ -60,25 +61,32 @@ textarea {
     padding: 1rem;
 }
 
-.tecla {
-    border: 1px var(--darkgray) solid;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.tecla:hover {
-    border-color: #D8BFD8;
-}
-
-.tecla:active {
-    border-color: #483D8B;
-}
 
 .tecla_operacoes {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
 }
+
+.tecla_operacoes > .tecla {
+    border-radius: 10px !important;
+}
+
+.tecla {
+    border: 1px var(--darkgray) solid;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.tecla:hover {
+    border: 1px #DB7093 solid;
+}
+
+.tecla:active {
+    box-shadow: 5px 2px var(--darkgray) inset;
+}
+
 
 .tecla_numerica {
     display: grid;
