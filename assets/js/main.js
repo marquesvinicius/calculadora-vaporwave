@@ -21,13 +21,8 @@ function calcular() {
 
     }
 
-    else {
-        document.getElementById('operacao').innerHTML = "Nenhuma operação";
-
-        if(document.onkeyup)
-        limpa();
-            
-        
+    else {            
+        alert('Digite alguma operacão!');
     }
 
 }
@@ -42,5 +37,4 @@ function calcular() {
 //     listaDeTeclas[contador].onclick = insert;
 
 // }
-
 
