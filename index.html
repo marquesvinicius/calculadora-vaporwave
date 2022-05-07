@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>ｃａｌｃｕｌａｄｏｒａ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="conteudo">
+
+
+    <main class="conteudo-principal">
+        <h1>ｃａｌｃｕｌａｄｏｒａ</h1>
+        <div class="operacao_e_teclado">
+            <textarea name="operacao" id="operacao" readonly></textarea>
+            <section class="teclado">
+                <div class="tecla_operacoes">
+                    <button class="tecla tecla_mais" onclick="insere('+')">+</button>
+                    <button class="tecla tecla_vezes" onclick="insere('*')">x</button>
+                    <button class="tecla tecla_menos" onclick="insere('-')">-</button>
+                    <button class="tecla tecla_divide" onclick="insere('/')">÷</button>
+                    <button class="tecla tecla_igual" onclick="calcular()">=</button>
+                </div>
+
+                <div class="tecla_numerica">
+                    <button class="tecla tecla_1" onclick="insere('1')">1</button>
+                    <button class="tecla tecla_2" onclick="insere('2')">2</button>
+                    <button class="tecla tecla_3" onclick="insere('3')">3</button>
+                    <button class="tecla tecla_4" onclick="insere('4')">4</button>
+                    <button class="tecla tecla_5" onclick="insere('5')">5</button>
+                    <button class="tecla tecla_6" onclick="insere('6')">6</button>
+                    <button class="tecla tecla_7" onclick="insere('7')">7</button>
+                    <button class="tecla tecla_8" onclick="insere('8')">8</button>
+                    <button class="tecla tecla_9" onclick="insere('9')">9</button>
+                    <button class="tecla tecla_c" onclick="limpa()">C</button>
+                    <button class="tecla tecla_0" onclick="insere('0')">0</button>
+                    <button class="tecla tecla_backspace" onclick="apaga()">←</button>
+                </div>
+            </section>
+        </div>
+
+        <h1>ＶＡＰＯＲＷＡＶＥ</h1>
+
+    </main>
+    <div class="background-figures">
+        <img class="vaporwave-background" id="diamonds" src="assets/img/vaporwave-statue.png" alt="estatua na estetica vaporwave">
+        <img class="vaporwave-background" id="circle" src="assets/img/vaporwave-circle.png" alt="circulo na estetica vaporwave">
+        <img class="vaporwave-background" id="pc" src="assets/img/vaporwave-pc.png" alt="pc na estetica vaporwave">
+    </div>
+    <script language="javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

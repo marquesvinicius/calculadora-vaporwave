@@ -1,0 +1,118 @@
+:root {
+    --darkgray: #A9A9A9;
+}
+
+body {
+    background: linear-gradient(45deg, #a7cfdf 0%,	#DB7093 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 67vh;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background: -webkit-linear-gradient(#4BFFDC,#C6F5FA);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+textarea {
+    resize: initial;
+    height: 25px;
+    width: 12rem;
+    border: 1px var(--darkgray) solid;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+#operacao {
+    align-self: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.operacao_e_teclado {
+    background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+    width: 13rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.tecla {
+    border: 1px var(--darkgray) solid;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.tecla:hover {
+    border-color: #D8BFD8;
+}
+
+.tecla:active {
+    border-color: #483D8B;
+}
+
+.tecla_operacoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.tecla_numerica {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tecla_0 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.background-figures {
+    background-image: url("../img/vaporwave-grid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#pc {
+    width: 25%;
+    padding-right: 5rem;
+}
+
+#circle {
+    width: 45%;
+    padding-left: 10rem;
+}
+
+#diamonds {
+    width: 20%;
+    padding-left: 5rem;
+}
